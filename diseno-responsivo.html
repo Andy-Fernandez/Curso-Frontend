@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document Cascada</title>
+    <title>Document</title>
     <style>
-        /*Podemos ver el tema de cascada, que el últimos estilo es el que se queda.*/
-        h1{
-            color: red;
+        div {
+            background: purple;
         }
-        h1{
-            color: blue;
+
+        /* si el ancho pasa de los 900px cambia rojo*/
+        @media (min-width: 900px) { 
+            div {
+                background: red;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Platzi</h1>
+    <div>Platzi</div>
 </body>
 </html>

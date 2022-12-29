@@ -7,17 +7,28 @@
     <title>Document</title>
     <style>
         .container {
+            /* Le decimos que el display de tipo flexible*/
+            /* Si no usamos el display flex los margenes se coplapsan
+            se sobreponen pero con flex conserva sus margenes*/
             display: flex;
+
+            /* La dirección sea de tipo columna, puede ser row como fila*/
+            /* flex-direction: row; */
             flex-direction: column;
+            /* flex-direction: row-reverse; */
+
             background: papayawhip;
-            
         }
         div {
-            width: 50px;
-            height: 25px;
-            margin: 0.5px;
-            border: 1px solid peru;
+            width: 200px; /*El ancho*/
+            height: 50px; /* Alto */
+            margin: 5px;
+            border: 1.5px solid blueviolet;
+            background-color: azure;
+            padding: 3.5px;
             box-sizing: border-box;
+            /* A primera impresión el content se "come" el tamaño del borde
+            y el paddin entonces la caja toma el valor de width y height*/
         }
     </style>
 </head>
@@ -26,6 +37,5 @@
         <div>Platzi</div>
         <div>Master</div>
     </section>
-   
 </body>
 </html>
